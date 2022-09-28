@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply transition duration-300 dark:bg-slate-700;
+}
+
+header {
+    @apply sticky top-0 z-10;
+}
+
+.nav-border {
+    @apply p-2 border-b-[1px] border-r-[1px] border-b-transparent border-r-transparent hover:border-b-slate-100 hover:border-r-slate-100 rounded-br-lg;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] mt-2 block bg-white transition duration-300 rounded-2xl;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+}
+
+.time {
+    @apply py-1 bg-slate-200 text-center rounded-xl dark:bg-slate-900;
+}
+
+.watchButton {
+    @apply mt-8 w-full py-3 font-primary border-[1px] border-red-600 rounded-lg bg-red-600 text-white transition duration-300 hover:bg-slate-100 hover:text-red-600;
+}
+
+.table {
+    @apply w-72 font-secondary;
+}
+
+.podium {
+    @apply px-2 bg-slate-300 font-secondary flex justify-between items-center dark:bg-slate-900;
+}
+
+.pos1 {
+    @apply py-3;
+}
+
+.pos2 {
+    @apply py-2;
+}
+
+.pos3 {
+    @apply py-1;
+}
