@@ -5,7 +5,7 @@ const schedule = [];
 const raceDate = [];
 
 const raceSchedule = () => {
-    fetch('http://ergast.com/api/f1/current.json', {
+    fetch('https://ergast.com/api/f1/current.json', {
         'method': 'GET',
         'redirect': 'follow',
     })
