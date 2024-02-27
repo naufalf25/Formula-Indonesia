@@ -1,6 +1,6 @@
 
 const dataDriver = () => {    
-    fetch('http://ergast.com/api/f1/current/driverStandings.json', {
+    fetch('https://ergast.com/api/f1/current/driverStandings.json', {
         'method': 'GET',
         'redirect': 'follow',
     })
