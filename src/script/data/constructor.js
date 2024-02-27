@@ -1,6 +1,6 @@
 
 const dataConstructor = () => {
-    fetch('http://ergast.com/api/f1/current/constructorStandings.json', {
+    fetch('https://ergast.com/api/f1/current/constructorStandings.json', {
         'method': 'GET',
         'redirect': 'follow',
     })
